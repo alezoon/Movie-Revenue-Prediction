@@ -1,1 +1,1 @@
-# Movie Revnue Prediction
+# Movie Revenue Prediction
