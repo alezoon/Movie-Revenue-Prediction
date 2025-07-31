@@ -3,6 +3,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
+
+
+
 def train_model(X,y, test_size=0.2, random_state=42):
     """
     Train sklearn linear regression model
@@ -51,7 +54,7 @@ def model_evaluation(reg, X_test, y_test):
 
 
 
-def predict_revenue(reg, budget_dollars, popularity):
+def revenue_prediction(reg, budget_dollars, popularity):
     """
     Predicts the revenue for a new movie
     Pre-condition:
@@ -68,4 +71,4 @@ def predict_revenue(reg, budget_dollars, popularity):
     predicted_log_revenue = reg.predict([[log_budget, popularity]])[0]
     predicted_revenue = np.expm1(predicted_log_revenue)
     
-    return predict_revenue
+    return predicted_revenue

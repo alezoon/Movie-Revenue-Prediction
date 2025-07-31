@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 
+
+
+
 def load_and_clean_data(filepath):
     """
     Loads dataset and drops unnessecary columns
@@ -41,7 +44,7 @@ def apply_log_transforms(movie_data):
 
 
 
-def feature_prer(movie_data):
+def feature_prep(movie_data):
     """
     Prepare X, y for modeling
     Pre-condition:
