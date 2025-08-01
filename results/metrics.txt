@@ -1,0 +1,12 @@
+Movie Revenue Prediction Model - Metrics
+===============================================
+Date: 2025-07-31
+Model: Linear Regression
+Features: log_budget, popularity
+Target: log_revenue
+
+Performance Metrics (Log Transformed):
+- R2 Score: 0.6495916699606086
+- Mean Squared Error: 1.3938554722464331
+- Root Mean Squared Error: 1.1806165644469135
+- Mean Absolute Error: 0.8337041817181683
