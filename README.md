@@ -46,6 +46,13 @@ MovieRevenuePrediction/
 - Comprehensive model evaluation metrics
 - Revenue prediction for new movies
 
+## Example Prediction
+
+```python
+# Predict revenue for a $50M budget movie with popularity score of 3
+predicted_revenue = revenue_prediction(reg, 50000000, 3)
+# Output: $116,991,401
+
 ## Usage
 
 ```bash
@@ -57,3 +64,4 @@ jupyter notebook movie_revenue_analysis.ipynb
 
 # Or use the modules directly
 from src.model import train_model, revenue_prediction
+```
