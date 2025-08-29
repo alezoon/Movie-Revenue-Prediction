@@ -22,12 +22,30 @@ This project analyzes movie industry data to predict box office revenue using li
 - Modular code architecture
 
 ## Project Structure
-MovieRevenuePrediction/
+Movie-Revenue-Prediction/
+
 ├── data/ # Dataset storage
+
+│ └── tmdb_movie_dataset.csv
+
 ├── src/ # Source code
+
 │ ├── data_processing.py # Data cleaning and preprocessing
+
 │ └── model.py # Model training and evaluation
+
 ├── notebooks/ # Jupyter notebooks
+
+│ └── movie_revenue_analysis.ipynb
+
+├── results/ # Model outputs
+
+│ ├── plots/ # Visualization outputs
+
+│ └── metrics.txt # Model performance metrics
+
+├── requirements.txt # Project dependencies
+
 └── README.md # Project documentation
 
 
