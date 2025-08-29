@@ -1,35 +1,52 @@
 # Movie Revenue Prediction
-Machine learning project that predicts movie revenues based on budget and popularity
+
+Machine learning model predicting box office revenue using budget and popularity metrics.
 
 ## Project Overview
-This project was created to learn and understand the machine learning workflow.
-The model predicts movie revenues using budget and popularity data from kaggle TMDB (Movie Database)
+
+This project analyzes movie industry data to predict box office revenue using linear regression with logarithmic transformation. The model identifies key financial indicators that drive movie success.
 
 ## Key Results
-- **Model**: Linear Regression
-- **R2 Score**: 0.65 (65% revenue variance)
-- **Features**: Budget (log transformed), popularity score
-- **Prediction Accuracy**: RMSE of 1.18
 
+- **Model:** Linear Regression with log transformation
+- **R² Score:** 0.65 (65% variance explained)
+- **RMSE:** 1.18 (log scale)
+- **Features:** Budget (log transformed), Popularity score
+- Successfully improved predictions through feature engineering
 
-## Project structure
+## Technologies
+
+- Python (pandas, scikit-learn, numpy, matplotlib)
+- Linear Regression with log transformation
+- Feature engineering and preprocessing
+- Modular code architecture
+
+## Project Structure
 MovieRevenuePrediction/
-├── data/
-│ └── tmdb_movie_dataset.csv
-├── src/
+├── data/ # Dataset storage
+├── src/ # Source code
 │ ├── data_processing.py # Data cleaning and preprocessing
 │ └── model.py # Model training and evaluation
-├── notebooks/
-│ └── movie_revenue_analysis.ipynb
-├── results/
-│ ├── plots/ # Visualizations
-│ └── metrics.txt # Model performance metrics
-├── requirements.txt
-└── README.md
+├── notebooks/ # Jupyter notebooks
+└── README.md # Project documentation
 
 
-## Getting Started
+## Features
 
-### Prerequisites
+- Automated data preprocessing pipeline
+- Log transformation for handling skewed financial data
+- Train/test split validation
+- Comprehensive model evaluation metrics
+- Revenue prediction for new movies
+
+## Usage
+
 ```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the notebook
+jupyter notebook movie_revenue_analysis.ipynb
+
+# Or use the modules directly
+from src.model import train_model, revenue_prediction
